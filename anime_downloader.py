@@ -63,11 +63,12 @@ def download_episodes(session: Session, episodes: BeautifulSoup, episodes_number
 
                 if download_anime_path is not None:
                     is_any_downloaded = True
+                    downloads_path = download_anime_path
             except:
                 print(f"Non e' stato possibile scaricare l'episodio {episode_num}")
     
     if is_any_downloaded:
-        print(f"I download si trovano in {download_anime_path}\n")
+        print(f"I download si trovano in {downloads_path}\n")
 
 
 
